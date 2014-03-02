@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fairplay</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script data-main="scripts/app" src="components/requirejs/require.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<form action="" method="post" id="form">
+			<label>Passphrase:</label>
+			<input type="text" id="passphrase" />
+			<label>Plaintext:</label>
+			<textarea id="plaintext"></textarea>
+			<label>Ciphertext:</label>
+			<textarea id="ciphertext"></textarea>
+			<input type="button" value="Encrypt" id="encrypt" />
+			<input type="button" value="Decrypt" id="decrypt" />
+		</form>
+		<div id="key"></div>
+	</div>
+</body>
+</html>

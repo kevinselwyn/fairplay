@@ -1,0 +1,35 @@
+#wrapper {
+  width: 600px;
+  margin: 0 auto; }
+
+form {
+  width: 400px;
+  float: left; }
+  form label {
+    margin-top: 10px;
+    font: 13px/16px "Arial", Arial, Sans-Serif;
+    display: block; }
+    form label:first-child {
+      margin: 0; }
+  form input[type=text], form textarea {
+    width: 290px;
+    padding: 5px;
+    border: 1px solid #000;
+    outline: 0;
+    display: block; }
+  form input[type=text] {
+    height: 14px; }
+  form textarea {
+    height: 42px; }
+  form input[type=button] {
+    margin: 10px 10px 0 0;
+    display: block;
+    float: left; }
+
+#key {
+  width: 178px;
+  height: 178px;
+  padding: 10px;
+  border: 1px solid #000;
+  font: 31px "Courier", monospace;
+  float: right; }

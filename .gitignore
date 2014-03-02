@@ -1,0 +1,4 @@
+.DS_Store
+demo/.sass-cache
+demo/components
+node_modules

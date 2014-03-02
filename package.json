@@ -1,0 +1,18 @@
+{
+	"name": "fairplay",
+	"version": "0.1.0",
+	"author": "Kevin Selwyn",
+	"licenses": [
+		{
+			"type": "GPLv3",
+			"url": "http://www.gnu.org/licenses/gpl-3.0.html"
+		}
+	],
+	"devDependencies": {
+		"grunt": "~0.4.0",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-jslint": "*",
+		"matchdep": "*"
+	}
+}
