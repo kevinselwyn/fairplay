@@ -1,12 +1,12 @@
-#fairplay
+# fairplay
 
 Javascript implementation of the [Playfair cipher](http://en.wikipedia.org/wiki/Playfair_cipher)
 
-##Demo
+## Demo
 
 [fairplay](http://kevinselwyn.com/fairplay/)
 
-##Usage
+## Usage
 
 Include the script in your document:
 
@@ -18,13 +18,13 @@ If you are using a module loader like [RequireJS](http://requirejs.org), require
 
 ```js
 require(["dist/fairplay.min"], function (fairplay) {
-	
+
 });
 ```
 
-##Functions
+## Functions
 
-###fairplay.generateKey()
+### fairplay.generateKey()
 
 Providing a keyphrase to this function will generate a key square:
 
@@ -39,7 +39,7 @@ fairplay.generatekey("Charles Wheatstone");
 // ]
 ```
 
-###fairplay.printKey()
+### fairplay.printKey()
 
 In addition to generating a key square, it will print the key with the newline character(s) of your choice (`\n` by default):
 
@@ -53,7 +53,7 @@ fairplay.printKey("Charles Wheatstone", "<br />");
 //  u v x y z"
 ```
 
-###fairplay.encrypt()
+### fairplay.encrypt()
 
 Given a keyphrase and plaintext, it will encrypt the plaintext using the Playfair cipher:
 
@@ -62,7 +62,7 @@ fairplay.encrypt("Charles Wheatstone", "Lord Playfair");
 // Returns: "ogafqrrxdrpc"
 ```
 
-###fairplay.decrypt()
+### fairplay.decrypt()
 
 Given a keyphrase and ciphertext, it will decrypt the ciphertext using the Playfair cipher:
 
@@ -71,7 +71,7 @@ fairplay.decrypt("Charles Wheatstone", "ogafqrrxdrpc");
 // Returns: "lordplayfair"
 ```
 
-##Configuration
+## Configuration
 
 In situations where there is an odd number of characters in the plaintext and double-letter digraphs, by default an `x` is used to pad the plaintext or replace the duplicated letter.
 
@@ -83,7 +83,7 @@ fairplay.monograph = "x";
 
 Note: This implementation of the Playfair cipher changes all letter `j`s to `i`s to facilitate perfect 5x5 key squares.
 
-##Testing
+## Testing
 
 Test with [nodeunit](https://github.com/caolan/nodeunit):
 
